@@ -2,7 +2,7 @@
 
 $mensaje = "";
 
-if ($_GET['number']){
+if (isset($_GET['number'])){
     switch($_GET['number']){
         case $_GET['number'] == 0:
             $mensaje = "El número ingresado es 0";

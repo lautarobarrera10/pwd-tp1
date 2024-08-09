@@ -7,9 +7,9 @@ body {
 form {
     display: flex;
     flex-direction: column;
-    gap: 12px;
 }
 button {
+    margin-top: 20px;
     color: white;
     background-color: blue;
     border: none;
@@ -22,5 +22,6 @@ p {
     text-align: justify;
 }
 input {
+    margin-bottom: 12px;
     padding: 8px;
 }
