@@ -1,11 +1,3 @@
-<?php
-// Ejercicio 1
-// Confeccionar un formulario que solicite un número. Al pulsar el botón de enviar debe
-// llamar a un script –vernumero.php- y visualizar un mensaje que indique si el número
-// enviado fue: positivo, cero o negativo. Añadir un link, a la página que visualiza la
-// respuesta, que permita volver a la página anterior.
-?>
-
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -26,15 +18,15 @@
     <h2>Solución</h2>
     <form action="./action/action-ej2.php" method="get">
         <h3>Programación Web Dinámica</h3>
-        <label for="number">Ingrese la cantidad de horas de cursada del lunes</label>
+        <label for="lunes">Ingrese la cantidad de horas de cursada del lunes</label>
         <input type="number" name="lunes" id="lunes" min="0" max="6" required>
-        <label for="number">Ingrese la cantidad de horas de cursada del martes</label>
+        <label for="martes">Ingrese la cantidad de horas de cursada del martes</label>
         <input type="number" name="martes" id="martes" min="0" max="6" required>
-        <label for="number">Ingrese la cantidad de horas de cursada del miercoles</label>
+        <label for="miercoles">Ingrese la cantidad de horas de cursada del miercoles</label>
         <input type="number" name="miercoles" id="miercoles" min="0" max="6" required>
-        <label for="number">Ingrese la cantidad de horas de cursada del jueves</label>
+        <label for="jueves">Ingrese la cantidad de horas de cursada del jueves</label>
         <input type="number" name="jueves" id="jueves" min="0" max="6" required>
-        <label for="number">Ingrese la cantidad de horas de cursada del viernes</label>
+        <label for="viernes">Ingrese la cantidad de horas de cursada del viernes</label>
         <input type="number" name="viernes" id="viernes" min="0" max="6" required>
         <button type="submit">Enviar</button>
     </form>
