@@ -1,13 +1,14 @@
 <?php
 
-include_once "../../control/Texto.php";
+include_once "../../control/Mensaje.php";
 include_once "../../utils/funciones.php";
 
 $datos = darDatosSubmitted();
 
-$obj = new Texto;
-$mensajePresentacion = $obj->armarMensajeDePresentacion($datos);
-$mensajeMayorEdad = $obj->armarMensajeDeMayorEdad($datos['edad']);
+$obj = new Mensaje;
+$obj->armarMensajeDePresentacion($datos);
+$obj->concatenarMayoriaEdad($datos['edad']);
+$mensaje = $obj->getMensaje();
 
 ?>
 
@@ -21,7 +22,7 @@ $mensajeMayorEdad = $obj->armarMensajeDeMayorEdad($datos['edad']);
 </head>
 <body>
     <h1>Mensaje de presentación</h1>
-    <p><?php echo $mensajePresentacion . " " . $mensajeMayorEdad; ?></p>
+    <p><?php echo $mensaje; ?></p>
     <a href="../ej4.php">Volver atras</a>
 </body>
 </html>
