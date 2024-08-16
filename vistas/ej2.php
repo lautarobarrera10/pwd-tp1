@@ -12,7 +12,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ejercicio 2</title>
-    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="../../style.css">
 </head>
 <body>
     <h1>Ejercicio 2</h1>
@@ -24,7 +24,7 @@
     se cursan por semana.
     </p>
     <h2>Solución</h2>
-    <form action="./horascursadas.php" method="get">
+    <form action="./action/action-ej2.php" method="get">
         <h3>Programación Web Dinámica</h3>
         <label for="number">Ingrese la cantidad de horas de cursada del lunes</label>
         <input type="number" name="lunes" id="lunes" min="0" max="6" required>

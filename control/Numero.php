@@ -14,4 +14,14 @@ class Numero {
 
         return $mensaje;
     }
+
+    public function sumarHorasSemanales($info){
+        $totalHorasCursadas = 0;
+
+        foreach ($info as $horas) {
+            $totalHorasCursadas += $horas;
+        }
+
+        return $totalHorasCursadas;
+    }
 }
