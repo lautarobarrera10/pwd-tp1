@@ -10,6 +10,7 @@ $obj->armarMensajeDePresentacion($datos);
 $obj->concatenarMayoriaEdad($datos['edad']);
 $obj->concatenarNivelEstudios($datos['estudios']);
 $obj->concatenarSexo($datos['sexo']);
+$obj->concatenarDeportes($datos);
 $mensaje = $obj->getMensaje();
 
 ?>
@@ -25,6 +26,6 @@ $mensaje = $obj->getMensaje();
 <body>
     <h1>Mensaje de presentación</h1>
     <p><?php echo $mensaje; ?></p>
-    <a href="../ej5.php">Volver atras</a>
+    <a href="../ej6.php">Volver atras</a>
 </body>
 </html>

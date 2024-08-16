@@ -59,4 +59,38 @@ class Mensaje {
             $this->concatenarMensaje("Mi sexo prefiero no decirlo.");
         }
     }
+
+    public function concatenarDeportes($info){
+        $deportes = $this->obtenerDeportes($info);
+
+        $deporteMensaje = "Practico ";
+
+        for ($i=0; $i < count($deportes); $i++) {
+            if (count($deportes) - 2 === $i) {
+                $deporteMensaje .= "$deportes[$i] y ";
+            } else if (count($deportes) - 1 === $i) {
+                $deporteMensaje .= "$deportes[$i].";
+            } else {
+                $deporteMensaje .= "$deportes[$i], ";
+            }
+        }
+
+        $this->concatenarMensaje($deporteMensaje);
+    }
+
+    public function obtenerDeportes($info){
+        $deportes = [];
+
+        foreach ($info as $key => $value) {
+            if ($key == "futbol" || 
+                $key == "basquet" || 
+                $key == "voley" || 
+                $key == "tenis"
+            ) {
+                array_push($deportes, $key);
+            }
+        }
+
+        return $deportes;
+    }
 }
