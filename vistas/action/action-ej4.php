@@ -6,7 +6,8 @@ include_once "../../utils/funciones.php";
 $datos = darDatosSubmitted();
 
 $obj = new Texto;
-$mensaje = $obj->armarMensajeDePresentacion($datos);
+$mensajePresentacion = $obj->armarMensajeDePresentacion($datos);
+$mensajeMayorEdad = $obj->armarMensajeDeMayorEdad($datos['edad']);
 
 ?>
 
@@ -20,7 +21,7 @@ $mensaje = $obj->armarMensajeDePresentacion($datos);
 </head>
 <body>
     <h1>Mensaje de presentación</h1>
-    <p><?php echo $mensaje; ?></p>
-    <a href="../ej3.php">Volver atras</a>
+    <p><?php echo $mensajePresentacion . " " . $mensajeMayorEdad; ?></p>
+    <a href="../ej4.php">Volver atras</a>
 </body>
 </html>
