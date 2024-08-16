@@ -12,7 +12,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ejercicio 1</title>
-    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="../style.css">
 </head>
 <body>
     <h1>Ejercicio 1</h1>
@@ -23,7 +23,7 @@
     respuesta, que permita volver a la página anterior.
     </p>
     <h2>Solución</h2>
-    <form action="./vernumero.php" method="get">
+    <form action="./action/action-ej1.php" method="post">
         <label for="number">Ingrese un número</label>
         <input type="number" name="number" id="number" required>
         <button type="submit">Enviar</button>
