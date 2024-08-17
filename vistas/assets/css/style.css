@@ -30,3 +30,19 @@ input, select {
 select {
     font-size: 16px;
 }
+
+.boton-alternativo {
+    padding-block: 12px;
+    text-transform: uppercase;
+    text-decoration: none;
+    text-align: center;
+    color: black;
+    font-size: 0.8rem;
+}
+
+.precio {
+    text-align: center;
+    color: green;
+    font-weight: 500;
+    font-size: 1.5rem;
+}
