@@ -4,9 +4,9 @@ include_once "../../control/Entrada.php";
 include_once "../../utils/funciones.php";
 
 $datos = darDatosSubmitted();
-extract($datos);
+// extract($datos);
 
-$entrada = new Entrada($edad, $estudiante);
+$entrada = new Entrada($datos);
 $precio = $entrada->getPrecio();
 $estudiante = $entrada->getEstudiante() ? "Sí" : "No";
 

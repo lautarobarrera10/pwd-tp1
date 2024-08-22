@@ -5,9 +5,9 @@ class Entrada {
     private $estudiante;
     private $precio;
 
-    public function __construct($edad, $estudiante){
-        $this->edad = $edad;
-        $this->estudiante = $estudiante == "si" ? true : false;
+    public function __construct($datos){
+        $this->edad = $datos['edad'];
+        $this->estudiante = $datos['estudiante'] == "si" ? true : false;
         $this->precio = $this->calcularPrecio();
     }
 
