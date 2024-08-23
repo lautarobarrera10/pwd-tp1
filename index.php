@@ -16,5 +16,17 @@
         <li><a href="./tp1/vistas/ej7.php">TP 1 - Ejercicio 7</a></li>
         <li><a href="./tp1/vistas/ej8.php">TP 1 - Ejercicio 8</a></li>
     </ul>
+    <br><br>
+    <ul>
+        <li><a href="./tp2/vistas/ej-1.php">TP 2 - Ejercicio 1</a></li>
+        <li><a href="./tp2/vistas/ej-3.php">TP 2 - Ejercicio 3</a></li>
+        <li><a href="./tp2/vistas/ej-4.php">TP 2 - Ejercicio 4</a></li>
+    </ul>
+    <br><br>
+    <ul>
+        <li><a href="./tp3/vistas/eje1.php">TP 3 - Ejercicio 1</a></li>
+        <li><a href="./tp3/vistas/eje2.php">TP 3 - Ejercicio 2</a></li>
+        <li><a href="./tp3/vistas/eje3.php">TP 3 - Ejercicio 3</a></li>
+    </ul>
 </body>
 </html>
