@@ -16,11 +16,11 @@ $usuarioCorrecto = $obj->verificarUsuario();
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ejercicio A</title>
+    <title>Ejercicio 3</title>
     <link rel="stylesheet" href="../assets/css/style.css">
 </head>
 <body>
-    <h1>Ejercicio A</h1>
+    <h1>Ejercicio 3</h1>
     <h2>Consigna</h2>
     <p> Crear una nueva página php con un formulario HTML de login en la que solicitan el usuario
     y la password para loguearse. Los datos del formulario son enviados a un script
