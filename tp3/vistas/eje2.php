@@ -12,14 +12,16 @@
 
     <div class="container mt-5">
         <h1 class="mb-4">Consigna</h1>
-        <p>Ejercicio 1 – Crear un formulario HTML que permita subir un archivo. En el servidor se deberá controlar, antes de guardar el archivo, que los tipos válidos son .doc o .pdf y además el tamaño máximo permitido es de 2MB. En caso que se cumplan las condiciones, mostrar un link al archivo cargado; en caso contrario, mostrar un mensaje indicando el problema.</p>
+        <p>Crear un formulario que permita subir un archivo. En el servidor se deberá controlar
+        que el tipo esperado sea txt (texto plano), si es correcto deberá abrir el archivo y mostrar su
+        contenido en un textarea.</p>
 
         <h1 class="mb-4">Solución</h1>
         <p>Subir archivo</p>
-        <form action="./action/action-ej-1.php" method="post" enctype="multipart/form-data">
+        <form action="./action/action-ej-2.php" method="post" enctype="multipart/form-data">
             <div class="mb-3">
                 <label for="archivo" class="form-label">Seleccionar archivo</label>
-                <input type="file" class="form-control" name="archivo" id="archivo" accept=".doc,.pdf" required>
+                <input type="file" class="form-control" name="archivo" id="archivo" accept=".txt" required>
             </div>
             <button type="submit" class="btn btn-primary">Subir archivo</button>
         </form>
