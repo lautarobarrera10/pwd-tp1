@@ -162,7 +162,7 @@ class Auto {
             }
             
         } else {
-            $this->setMensajeOperacion("auto->listar: ".$base->getError());
+            self::setMensajeOperacion("auto->listar: ".$base->getError());
         }
  
         return $arreglo;
