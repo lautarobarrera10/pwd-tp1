@@ -1,5 +1,7 @@
 <?php
 
+//require_once("../modelo/conector/BaseDatos.php");
+
 class AbmPersona {
  
 

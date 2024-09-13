@@ -1,51 +1,65 @@
-<?php
-require_once '../../Control/AbmPersona.php'; // Capa de control para personas
-require_once '../../Modelo/Persona.php';
-// Obtener los datos del formulario
-$dni = $_POST['dni'];
-$apellido = $_POST['apellido'];
-$nombre = $_POST['nombre'];
-$fechaNac = $_POST['fechaNac'];
-$telefono = $_POST['telefono'];
-$domicilio = $_POST['domicilio'];
-
-// Crear una instancia de PersonaControl
-$personaControl = new AbmPersona();
-
-// Registrar la nueva persona
-$resultado = $personaControl->agregarNuevaPersona($dni, $apellido, $nombre, $fechaNac, $telefono, $domicilio);
-?>
-
 <!DOCTYPE html>
-<html lang="es">
+<html>
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Resultado del Registro</title>
-    <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <title>Actualizar Datos de Persona</title>
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="../css/inicio.css">
+    <script type="text/javascript" src="../js/bootstrap.bundle.min.js"></script>
 </head>
-<body>
-    <div class="container mt-5">
-        <h1 class="text-center">Resultado del Registro</h1>
+<body class="bg-dark">
+    <?php
 
-        <div class="alert <?php echo $resultado ? 'alert-success' : 'alert-danger'; ?>" role="alert">
-            <?php
-            if ($resultado) {
-                echo "Persona registrada exitosamente.";
+    require_once("../../../configuracion.php");
+    $rutalogo = "../img/";
+    include_once("../../estructura/menu/menu_accion.php");
+    include_once("../../estructura/Navbar.php");
+    require_once("../../../configuracion.php");
+    ?>
+
+<main class="container-fluid cont container text-light">
+
+    <div class="card col-12 text-center" data-bs-theme="dark">
+        <h2>Resultado Nueva Persona</h2>
+        <div class="container text-center">
+        <?php
+
+            $datos = darDatosSubmitted();
+            if ($_SERVER["REQUEST_METHOD"] == "POST") {
+                
+                $nroDni = $datos["nroDni"];
+                $nombre = $datos["nombre"];
+                $apellido = $datos["apellido"];
+                $fechaNac = $datos["fechaNac"];
+
+                $fechaSql = date('Y-m-d', strtotime(str_replace('/', '-', $fechaNac)));
+
+                $telefono = $datos["telefono"];
+                $domicilio = $datos["domicilio"];
+
+                // Realiza las validaciones necesarias, por ejemplo, si el DNI ya existe en la base de datos
+                $abmPersona = new AbmPersona();
+                $resultado = $abmPersona->agregarNuevaPersona($nroDni, $nombre, $apellido, $fechaSql, $telefono, $domicilio);
+
+                if (strpos($resultado, "registrada con éxito") !== false) {
+                    // Éxito: la persona se registró correctamente
+                    echo "Persona registrada con éxito.";
+                } else {
+                    // Error: se produjo un error durante el registro
+                    echo "Error al registrar la persona: " . $resultado;
+                }
             } else {
-                echo "Error al registrar la persona. Verifica los datos e intenta nuevamente.";
+                // Redirigir a la página de registro si se accede directamente a este archivo sin enviar el formulario
+                header("Location: NuevaPersona.php");
+                exit();
             }
             ?>
         </div>
-
-        <div class="text-center">
-            <a href="../RegistroPersona.php" class="btn btn-primary">Registrar otra persona</a>
-            <a href="VerAutos.php" class="btn btn-secondary">Volver a la lista de autos</a>
-        </div>
     </div>
-
-    <!-- Bootstrap JS -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</main>
+<div class="contenedor">
+</div>
+<?php include_once("../../estructura/Footer.php"); ?>
 </body>
 </html>

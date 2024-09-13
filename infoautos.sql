@@ -17,18 +17,18 @@
 -- 
 
 CREATE TABLE `auto` (
-  `Patente` varchar(10) character set utf8 collate utf8_unicode_ci NOT NULL,
-  `Marca` varchar(50) character set utf8 collate utf8_unicode_ci NOT NULL,
-  `Modelo` int(11) NOT NULL,
-  `DniDuenio` varchar(10) character set utf8 collate utf8_unicode_ci NOT NULL,
-  PRIMARY KEY  (`Patente`)
+  `patente` varchar(10) character set utf8 collate utf8_unicode_ci NOT NULL,
+  `marca` varchar(50) character set utf8 collate utf8_unicode_ci NOT NULL,
+  `modelo` int(11) NOT NULL,
+  `dniDuenio` varchar(10) character set utf8 collate utf8_unicode_ci NOT NULL,
+  PRIMARY KEY  (`patente`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 -- 
 -- Volcar la base de datos para la tabla `auto`
 -- 
 
-INSERT INTO `auto` (`Patente`, `Marca`, `Modelo`, `DniDuenio`) VALUES 
+INSERT INTO `auto` (`patente`, `marca`, `modelo`, `dniDuenio`) VALUES 
 ('ADC 152', 'Fiat Uno', 98, '28326986'),
 ('POL 968', 'Renault 12', 77, '28326986'),
 ('KJU 952', 'Ford Fiesta', 2006, '25963874'),
@@ -43,28 +43,28 @@ INSERT INTO `auto` (`Patente`, `Marca`, `Modelo`, `DniDuenio`) VALUES
 -- 
 
 CREATE TABLE `persona` (
-  `NroDni` varchar(10) character set utf8 collate utf8_unicode_ci NOT NULL,
-  `Apellido` varchar(50) character set utf8 collate utf8_unicode_ci NOT NULL,
-  `Nombre` varchar(50) character set utf8 collate utf8_unicode_ci NOT NULL,
-  `fechaNac` date NOT NULL default '0000-00-00',
-  `Telefono` varchar(20) character set utf8 collate utf8_unicode_ci NOT NULL,
-  `Domicilio` varchar(200) character set utf8 collate utf8_unicode_ci NOT NULL,
-  PRIMARY KEY  (`NroDni`)
+  `nroDni` varchar(10) character set utf8 collate utf8_unicode_ci NOT NULL,
+  `apellido` varchar(50) character set utf8 collate utf8_unicode_ci NOT NULL,
+  `nombre` varchar(50) character set utf8 collate utf8_unicode_ci NOT NULL,
+  `fechaNac` date NOT NULL,
+  `telefono` varchar(20) character set utf8 collate utf8_unicode_ci NOT NULL,
+  `domicilio` varchar(200) character set utf8 collate utf8_unicode_ci NOT NULL,
+  PRIMARY KEY  (`nroDni`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 -- 
 -- Volcar la base de datos para la tabla `persona`
 -- 
 
-INSERT INTO `persona` (`NroDni`, `Apellido`, `Nombre`, `fechaNac`, `Telefono`, `Domicilio`) VALUES 
+INSERT INTO `persona` (`nroDni`, `apellido`, `nombre`, `fechaNac`, `telefono`, `domicilio`) VALUES 
 ('28326986', 'Moya', 'Manuel', '1981-12-03', '299-9632587', 'Linares 44 piso 2 dpto 5'),
 ('25963874', 'Farias', 'Marta', '1975-06-21', '299-1559354', 'Roca 568'),
 ('30875962', 'Lopez', 'Eduardo', '1983-10-03', '299-6587741', 'Santa Fe 98'),
 ('22985265', 'Ramirez', 'Claudia', '1971-05-16', '299-9854155', 'Sarmiento 55');
 
 
-ALTER TABLE `auto` ADD KEY `idTipoVehiculo` (`DniDuenio`);
+ALTER TABLE `auto` ADD KEY `idTipoVehiculo` (`dniDuenio`);
 
 ALTER TABLE `auto`
-ADD CONSTRAINT `auto_ibfk_1` FOREIGN KEY (`DniDuenio`) REFERENCES `persona` (`NroDni`);
+ADD CONSTRAINT `auto_ibfk_1` FOREIGN KEY (`dniDuenio`) REFERENCES `persona` (`nroDni`);
 

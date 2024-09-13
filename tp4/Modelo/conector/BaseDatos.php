@@ -8,10 +8,10 @@ class BaseDatos extends PDO {
     private $pass;
   	private $debug;
   	private $conec;
-    private $error;
-    private $sql;
   	private $indice;
   	private $resultado;
+    private $error;
+    private $sql;
     
     public function __construct(){
         $this->engine = 'mysql';
@@ -35,7 +35,7 @@ class BaseDatos extends PDO {
        
     }
     /**
-     * Inicia la coneccion con el Servidor y la  Base Datos Mysql.
+     * Inicia la conexion con el Servidor y la  Base Datos Mysql.
      * Retorna true si la coneccion con el servidor se pudo establecer y false en caso contrario
      *
      * @return boolean
@@ -141,7 +141,8 @@ class BaseDatos extends PDO {
    }
    
    /**
-    * Devuelve la cantidad de filas afectadas por la ejecucion SQL. Si el valor es <0 no se pudo realizar la opercion
+    * Devuelve la cantidad de filas afectadas por la ejecucion SQL. 
+    * Si el valor es <0 no se pudo realizar la opercion
     * @return integer 
     * 
     */
@@ -201,7 +202,7 @@ class BaseDatos extends PDO {
            }
           
        } 
-    
+  
        return $filaActual;
    }
    
@@ -237,10 +238,4 @@ class BaseDatos extends PDO {
       return $this->resultado;
    }
    
-   
-   
-   
-
-   
- 
 } 
