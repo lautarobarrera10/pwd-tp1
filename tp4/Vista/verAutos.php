@@ -8,7 +8,7 @@
 <link rel="stylesheet" href="./css/inicio.css">
      
 </head>
-<body class="bg-dark">
+<body class="bg-dark ">
 
 <?php
 
@@ -63,7 +63,6 @@
     ?>
 
 </main>
-<div class="contenedor"></div>
 <?php
     include_once("../estructura/Footer.php");
 ?>

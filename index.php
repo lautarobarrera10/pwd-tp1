@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <title>TPS PWD 2023</title>
+    <title>TPS PWD 2024 grupo 10 </title>
 </head>
 
 
@@ -17,7 +17,7 @@
 
     <section class="container text-center">
     <div class="col-md-12 p-3 ">
-                <h1 style="color:white">TPS Programación Web Dinámica 2023</h1>                
+                <h1 style="color:white">TPS Programación Web Dinámica 2024 </h1>      
             </div>
         <div class="row row justify-content-center p-3 ">
            
@@ -70,6 +70,18 @@
 
         </div>
     </section>
-    
+    <!-- <footer class="bg-dark text-center text-white "  >
+        <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+            © 2024 Copyright |
+            Grupo 10 - PWD
+          </div>
+          <div style="background-color: rgba(0, 0, 0, 0.2);" class="text-center p-3 pt-0">
+        
+            Contreras Katherine
+            Contreras Gabriela
+            Barrera Lautaro
+          </div>
+    </footer> -->
 </body>
+
 </html>

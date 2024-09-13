@@ -57,7 +57,7 @@
     echo $salida;
     ?>
     </main>
-    <div class="contenedor">
+    <div >
     </div>
     <?php include_once("../estructura/Footer.php"); ?>
 </body>

@@ -3,7 +3,7 @@
     <a class="navbar-brand" href="./" style="display:flex; flex-direction:row;">
 
         <?php $img = <<<IMG
-       <img src="$rutalogo/logo.png" width="80" height="80" alt="logo grupo 8">
+       <img src="$rutalogo/SuperAsombrososLogo.jpg" width="80" height="80" alt="logo grupo 8">
     IMG;
         echo $img;
         ?>

@@ -18,7 +18,7 @@
     include_once("../estructura/Navbar.php");
     ?>
 
-    <main class="container-fluid cont container text-light">
+    <main class=" cont container text-light">
 
         <div class="card col-12 text-center" data-bs-theme="dark">
             <div class="container text-center">
@@ -42,7 +42,7 @@
             </div>
         </div>
     </main>
-    <div class="contenedor">
+    <div >
     </div>
     <?php include_once("../estructura/Footer.php"); ?>
 

@@ -19,8 +19,8 @@
     include_once("../estructura/menu/menu.php");
     include_once("../estructura/Navbar.php");
     ?>
-
-    <main class="container-fluid cont container text-center text-light">
+<div class="contenedor" >
+    <main class="container-fluid cont container text-center text-light ">
 
         <h1>
             ¡Hola!
@@ -34,9 +34,8 @@
         </p>
 
     </main>
+    </div>
 
-
-    <div class="contenedor">
     </div>
 
 

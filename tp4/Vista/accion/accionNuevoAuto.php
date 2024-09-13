@@ -51,8 +51,7 @@
         </div>
     </div>
 </main>
-<div class="contenedor">
-</div>
+
 <?php include_once("../../estructura/Footer.php"); ?>
 </body>
 </html>

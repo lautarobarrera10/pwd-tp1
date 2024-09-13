@@ -45,8 +45,7 @@
                     </div>
                 </div>
     </main>
-    <div class="contenedor">
-    </div>
+
     <?php include_once("../estructura/Footer.php"); ?>
     
     <script src="./js/bootstrap.bundle.min.js"></script>
