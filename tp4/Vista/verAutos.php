@@ -24,7 +24,11 @@
 
     <?php
     // Incluye las clases de la capa de control
-  
+    include "../Modelo/conector/BaseDatos.php";
+    include "../Modelo/Auto.php";
+    include "../Modelo/Persona.php";
+    include "../Control/AbmAuto.php";
+    include "../Control/AbmPersona.php";
 
     // Crea instancias de las clases de la capa de control
     $abmAuto = new AbmAuto();

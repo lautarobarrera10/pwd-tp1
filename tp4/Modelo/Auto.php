@@ -66,16 +66,16 @@ class Auto {
     public function buscar(){
         $resp = false;
         $base = new BaseDatos();
-        $sql = "SELECT * FROM auto WHERE patente = ".$this->getPatente();
+        $sql = "SELECT * FROM auto WHERE Patente = ".$this->getPatente();
         if ($base->Iniciar()) {
             $res = $base->Ejecutar($sql);
             if($res>-1){
                 if($res>0){
                     $row = $base->Registro();
                     $duenio = new Persona();
-                    $duenio->setNroDni($row['dniDuenio']);
+                    $duenio->setNroDni($row['DniDuenio']);
                     $duenio->buscar();
-                    $this->cargar($row['patente'], $row['marca'], $row['modelo'], $duenio);
+                    $this->cargar($row['Patente'], $row['Marca'], $row['Modelo'], $duenio);
                     $resp = true;              
                 }
             }
@@ -91,7 +91,7 @@ class Auto {
         $resp = false;
         $base = new BaseDatos();
         if($this->getDuenio() != null){
-            $sql="INSERT INTO auto(patente, marca, modelo, dniDuenio)  VALUES ('".$this->getPatente()."','".$this->getMarca()."','".$this->getModelo()."','".$this->getDuenio()->getNroDni()."')";
+            $sql="INSERT INTO auto(Patente, Marca, Modelo, DniDuenio)  VALUES ('".$this->getPatente()."','".$this->getMarca()."','".$this->getModelo()."','".$this->getDuenio()->getNroDni()."')";
             if ($base->Iniciar()) {
                 if ($patente = $base->Ejecutar($sql)) {
                     $this->setPatente($patente);
@@ -110,8 +110,8 @@ class Auto {
     public function modificar(){
         $resp = false;
         $base = new BaseDatos();
-        $sql = "UPDATE auto SET marca = '".$this->getMarca()."',modelo='".$this->getModelo()."',
-        dniDuenio='".$this->getDuenio()->getNroDni()."' WHERE patente='". $this->getPatente()."'";
+        $sql = "UPDATE auto SET Marca = '".$this->getMarca()."',Modelo='".$this->getModelo()."',
+        DniDuenio='".$this->getDuenio()->getNroDni()."' WHERE Patente='". $this->getPatente()."'";
         if ($base->Iniciar()) {
             if ($base->Ejecutar($sql)) {
                 $resp = true;
@@ -127,7 +127,7 @@ class Auto {
     public function eliminar(){
         $resp = false;
         $base = new BaseDatos();
-        $sql = "DELETE FROM auto WHERE patente=".$this->getPatente();
+        $sql = "DELETE FROM auto WHERE Patente=".$this->getPatente();
         if ($base->Iniciar()) {
             if ($base->Ejecutar($sql)) {
                 $resp = true;
@@ -154,8 +154,8 @@ class Auto {
                 while ($row = $base->Registro()){
                     $obj= new Auto();
                     $duenio = new Persona();
-                    $duenio->setNroDni($row['dniDuenio']);
-                    $obj->cargar($row['patente'], $row['marca'], $row['modelo'], $duenio);
+                    $duenio->setNroDni($row['DniDuenio']);
+                    $obj->cargar($row['Patente'], $row['Marca'], $row['Modelo'], $duenio);
                     array_push($arreglo, $obj);
                 }
                

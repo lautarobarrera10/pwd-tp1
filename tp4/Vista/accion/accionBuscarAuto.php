@@ -1,6 +1,12 @@
 <!DOCTYPE html>
 <html>
 <?php
+ require_once("../../utils/functions.php");
+ require_once("../../Control/AbmAuto.php");
+ require_once("../../Control/AbmPersona.php");
+ require_once("../../Modelo/conector/BaseDatos.php");
+ require_once("../../Modelo/Auto.php");
+ require_once("../../Modelo/Persona.php");
  require_once("../../../configuracion.php");
  include_once("../../estructura/menu/menu_accion.php");
 ?>
