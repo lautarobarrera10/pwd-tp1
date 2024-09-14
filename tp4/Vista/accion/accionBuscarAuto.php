@@ -2,7 +2,7 @@
 
 require_once("../../utils/functions.php");
 require_once("../../../configuracion.php");
-include_once("../../estructura/menu/menu_accion.php");
+include_once("../estructura/menu/menu_accion.php");
 
 use Control\AbmAuto;
 use Control\AbmPersona;
@@ -10,19 +10,6 @@ use Control\AbmPersona;
 ?>
 <!DOCTYPE html>
 <html>
-<<<<<<< HEAD
-<?php
- require_once("../../utils/functions.php");
- require_once("../../Control/AbmAuto.php");
- require_once("../../Control/AbmPersona.php");
- require_once("../../Modelo/conector/BaseDatos.php");
- require_once("../../Modelo/Auto.php");
- require_once("../../Modelo/Persona.php");
- require_once("../../../configuracion.php");
- include_once("../estructura/menu/menu_accion.php");
-?>
-=======
->>>>>>> ed9c2e95e90f7967572840cce7e5c716ba5af8ff
 <head>
     <title>Resultado de la Búsqueda</title>
     <link rel="stylesheet" href="../assets/css/bootstrap.min.css">
@@ -34,14 +21,8 @@ use Control\AbmPersona;
 
 <body class="bg-dark">
     <?php
-<<<<<<< HEAD
     $rutalogo = "../assets/img/";
     include_once("../estructura/Navbar.php");
-    include_once("../estructura/menu/menu_accion.php");
-=======
-    $rutalogo = "../img/";
-    include_once("../../estructura/Navbar.php");
->>>>>>> ed9c2e95e90f7967572840cce7e5c716ba5af8ff
     ?>
 
     <main class="container-fluid cont container text-light">

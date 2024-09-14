@@ -1,7 +1,7 @@
 <?php
 
 require_once("../../configuracion.php");
-include_once("../estructura/menu/menu.php");
+include_once("./estructura/menu/menu.php");
 
 use Control\AbmAuto;
 use Control\AbmPersona;
@@ -23,15 +23,9 @@ use Control\AbmPersona;
 <?php
 
 
-<<<<<<< HEAD
-    require_once("../../configuracion.php");
     $rutalogo = "./assets/img/";
     include_once("./estructura/menu/menu.php");
     include_once("./estructura/Navbar.php");
-=======
-    $rutalogo = "./img/";
-    include_once("../estructura/Navbar.php");
->>>>>>> ed9c2e95e90f7967572840cce7e5c716ba5af8ff
 ?>
 
 <main class="container-fluid cont container text-center text-light">

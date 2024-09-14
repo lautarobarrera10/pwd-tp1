@@ -22,7 +22,6 @@ use Control\AbmAuto;
 
 <body class="bg-dark">
     <?php
-    include_once("./estructura/menu/menu.php");
     $rutalogo = "./assets/img/";
     include_once("./estructura/Navbar.php");
     ?>
