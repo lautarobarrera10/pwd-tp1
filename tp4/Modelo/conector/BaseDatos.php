@@ -1,4 +1,9 @@
 <?php
+
+namespace Modelo\conector;
+use PDO;
+use PDOException;
+
 class BaseDatos extends PDO {
   
     private $engine;

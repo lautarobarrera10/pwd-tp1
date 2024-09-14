@@ -1,6 +1,8 @@
 <?php
 
-//require_once("../modelo/conector/BaseDatos.php");
+namespace Control;
+use Modelo\Persona;
+use PDOException;
 
 class AbmPersona {
  

@@ -1,14 +1,15 @@
-<!DOCTYPE html>
-<html>
 <?php
-require("../../configuracion.php");
-require("../Control/AbmAuto.php");
-require("../Control/AbmPersona.php");
-require("../Modelo/conector/BaseDatos.php");
-require("../Modelo/Auto.php");
-require("../Modelo/Persona.php");
+
+require_once("../utils/functions.php");
+require_once("../../configuracion.php");
+
+use Control\AbmPersona;
+use Control\AbmAuto;
+
 ?>
 
+<!DOCTYPE html>
+<html>
 <head>
     <title>Autos de Persona</title>
     <link rel="stylesheet" href="./assets/css/bootstrap.min.css">

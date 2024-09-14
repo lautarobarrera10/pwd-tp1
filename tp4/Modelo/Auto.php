@@ -1,5 +1,9 @@
 <?php
 
+namespace Modelo;
+use Modelo\Persona;
+use Modelo\conector\BaseDatos;
+
 class Auto {
 
     private $patente;

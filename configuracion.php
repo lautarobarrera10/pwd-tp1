@@ -21,3 +21,10 @@ $INICIO = "Location:http://" . $_SERVER['HTTP_HOST'] . "/$PROYECTO/vista/login/l
 $PRINCIPAL = "Location:http://" . $_SERVER['HTTP_HOST'] . "/$PROYECTO/index.php";
 
 $_SESSION['ROOT'] = $ROOT;
+
+spl_autoload_register(function($clase){
+    $directorioBase = __DIR__ . "/tp4/";
+    if (file_exists($directorioBase . str_replace('\\', '/', $clase) . '.php')){
+        require_once $directorioBase . str_replace('\\', '/', $clase) . '.php';
+    }
+});

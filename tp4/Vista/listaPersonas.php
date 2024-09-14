@@ -1,3 +1,12 @@
+<?php
+
+include_once("../estructura/menu/menu.php");
+require_once("../../configuracion.php");
+
+use Control\AbmPersona;
+
+?>
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -10,17 +19,18 @@
 </head>
 <body class="bg-dark">
     <?php
+<<<<<<< HEAD
     $rutalogo = "./assets/img/";
     include_once("./estructura/menu/menu.php");
     include_once("./estructura/Navbar.php");
+=======
+    $rutalogo = "./img/";
+    include_once("../estructura/Navbar.php");
+>>>>>>> ed9c2e95e90f7967572840cce7e5c716ba5af8ff
     ?>
     <main class="container-fluid cont container text-light">
     <h1>Lista de Personas</h1>
     <?php
-    // Incluye la capa de control AbmPersona
-    require_once('../modelo/conector/BaseDatos.php');
-    require_once('../modelo/Persona.php');
-    require_once('../control/AbmPersona.php');
 
     // Crea una instancia de la capa de control AbmPersona
     $abmPersona = new AbmPersona();
