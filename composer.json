@@ -1,0 +1,15 @@
+{
+    "name": "lauta/pwd-tps",
+    "autoload": {
+        "psr-4": {
+            "Lauta\\PwdTps\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Lautaro Barrera",
+            "email": "lautarobarrera12@gmail.com"
+        }
+    ],
+    "require": {}
+}

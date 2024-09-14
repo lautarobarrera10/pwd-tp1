@@ -62,7 +62,7 @@
                     <div class="card-body">
                       <h5 class="card-title">TP N°4</h5>
                       <p class="card-text">Ejercicios PDO</p>
-                      <a href="./tp4" class="btn btn-primary">Ir al menu</a>
+                      <a href="./tp4/Vista/" class="btn btn-primary">Ir al menu</a>
                     </div>
                   </div>
             </div>
