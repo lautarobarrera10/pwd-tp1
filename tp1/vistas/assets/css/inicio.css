@@ -1,0 +1,7 @@
+.contenedor{
+    background: linear-gradient(135deg, #4caf50, #00bcd4); /* Gradiente de verde a azul */
+    color: white; /* Color de texto blanco para buen contraste */
+    padding: 20px; /* Espaciado interno para contenido */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra para dar profundidad */
+    height: 100%; /* Altura del contenedor */
+  }

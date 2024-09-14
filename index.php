@@ -17,22 +17,21 @@
 
     <section class="container text-center">
     <div class="col-md-12 p-3 ">
-                <h1 style="color:white">TPS Programación Web Dinámica 2024 </h1>      
+                <h1 class="mt-10" style="color:white">TPS Programación Web Dinámica 2024 </h1>      
             </div>
-        <div class="row row justify-content-center p-3 ">
-           
+        <div class="row row justify-content-center align-content-center h-100 ">
             <div class="col">
-                <div class="card" style="width: 20rem;">
+                <div class="card" style="width: 20rem;  height: 10rem; margin-bottom: 10px;">
                     
                     <div class="card-body">
                       <h5 class="card-title">TP N°1</h5>
                       <p class="card-text">Ejercicios simples para renderizar php con html.</p>
-                      <a href="./tp1" class="btn btn-primary">Ir al menu</a>
+                      <a href="./tp1/vistas/index.php" class="btn btn-primary">Ir al menu</a>
                     </div>
                   </div>
             </div>
             <div class="col">
-                <div class="card" style="width: 20rem;">
+                <div class="card" style="width: 20rem;  height: 10rem; margin-bottom: 10px;">
                     
                     <div class="card-body">
                       <h5 class="card-title">TP N°2</h5>
@@ -42,7 +41,7 @@
                   </div>
             </div>
             <div class="col">
-                <div class="card" style="width: 20rem;">
+                <div class="card" style="width: 20rem;  height: 10rem; margin-bottom: 10px;">
                   
                     <div class="card-body">
                       <h5 class="card-title">TP N°3</h5>
@@ -54,10 +53,10 @@
 
         </div>
 
-        <div class="row row justify-content-center p-3 ">
+        <div class="row row justify-content-center ">
            
             <div class="col">
-                <div class="card" style="width: 20rem;">
+                <div class="card" style="width: 20rem;  height: 10rem; margin-bottom: 10px;">
                     
                     <div class="card-body">
                       <h5 class="card-title">TP N°4</h5>
