@@ -5,7 +5,3 @@
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra para dar profundidad */
     height: 100%; /* Altura del contenedor */
   }
-
-  body {
-    font-family:'Times New Roman', Times, serif
-  }

@@ -15,10 +15,12 @@ $obj = new PeliculaController($datos);
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../assets/css/stylesIndex.css">
     <title>Ejercicio 4</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 </head>
 <body>
+    <?php include_once("../estructura/NavbarAction.php"); ?>
     <div class="d-flex flex-column align-items-center justify-content-center vh-100 bg-dark">
         <p class="mt-3"><a href="../ej-4.php" class="link-light link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover">Volver atrás</a></p>
 
@@ -27,5 +29,6 @@ $obj = new PeliculaController($datos);
             <?php echo $obj; ?>
         </div>
     </div>
+    <?php include_once("../estructura/Footer.php"); ?>
 </body>
 </html>

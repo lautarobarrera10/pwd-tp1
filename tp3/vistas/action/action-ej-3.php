@@ -47,9 +47,11 @@ if ($_POST) {
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ejercicio 3</title>
+    <link rel="stylesheet" href="../assets/css/stylesIndex.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 </head>
 <body>
+    <?php include_once("../estructura/NavbarAction.php"); ?>
     <div class="d-flex flex-column align-items-center justify-content-center vh-100 bg-dark">
         <p class="mt-3"><a href="../eje3.php" class="link-light link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover">Volver atrás</a></p>
 
@@ -60,5 +62,6 @@ if ($_POST) {
             <img src="../../control/archivos_imagen/<?php echo $imagenNombreUnico; ?>" alt="Imagen de la película" class="img-fluid">
         </div>
     </div>
+    <?php include_once("../estructura/Footer.php"); ?>
 </body>
 </html>

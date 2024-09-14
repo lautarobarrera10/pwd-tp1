@@ -1,5 +1,5 @@
 
-<footer class="bg-dark text-center text-white">
+<footer class="bg-dark text-center fixed-bottom text-white">
 
   <!-- Grid container -->
 

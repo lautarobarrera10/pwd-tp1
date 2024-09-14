@@ -20,7 +20,7 @@
             </h1>
             <br />
             <h2>
-                Te damos la bienvenida al Trabajo Práctico N°1
+                Te damos la bienvenida al Trabajo Práctico N°2
             </h2>
             <p>
                 Desplazate por el menu superior para acceder a los ejercicios.

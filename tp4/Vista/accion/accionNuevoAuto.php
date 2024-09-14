@@ -3,10 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <title>Actualizar Datos de Persona</title>
-    <link rel="stylesheet" href="../css/bootstrap.min.css">
-    <link rel="stylesheet" href="../css/styles.css">
-    <link rel="stylesheet" href="../css/inicio.css">
-    <script type="text/javascript" src="../js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="../assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../assets/css/styles.css">
+    <link rel="stylesheet" href="../assets/css/inicio.css">
+    <script type="text/javascript" src="../assets/js/bootstrap.bundle.min.js"></script>
 </head>
 <body class="bg-dark">
     <?php
@@ -19,9 +19,9 @@
     require_once("../../Modelo/Persona.php");
 
     require_once("../../../configuracion.php");
-    $rutalogo = "../img/";
-    include_once("../../estructura/menu/menu_accion.php");
-    include_once("../../estructura/Navbar.php");
+    $rutalogo = "../assets/img/";
+    include_once("../estructura/menu/menu_accion.php");
+    include_once("../estructura/Navbar.php");
     require_once("../../../configuracion.php");
     ?>
 
@@ -59,6 +59,6 @@
     </div>
 </main>
 
-<?php include_once("../../estructura/Footer.php"); ?>
+<?php include_once("../estructura/Footer.php"); ?>
 </body>
 </html>

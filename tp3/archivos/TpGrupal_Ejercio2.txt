@@ -1,0 +1,97 @@
+CREATE TABLE TpG_Persona(
+tipoDoc VARCHAR(50),
+nroDocumento INT,
+nombre VARCHAR(50),
+apellido VARCHAR(50),
+fechaNacimiento DATE,
+telefono INT,
+direccion VARCHAR(100),
+PRIMARY KEY (tipoDoc,nroDocumento)
+);
+
+
+CREATE TABLE TpG_Pasajero(
+tipoDoc VARCHAR(50),
+nroDocumento INT,
+situacionFiscal VARCHAR(100),
+PRIMARY KEY (tipoDoc,nroDocumento),
+FOREIGN KEY (tipoDoc,nroDocumento) REFERENCES TpG_Persona (tipoDoc,nroDocumento)
+ON DELETE CASCADE ON UPDATE CASCADE
+);
+
+CREATE TABLE TpG_Chofer(
+tipoDoc VARCHAR(50),
+nroDocumento INT,
+legajo INT,
+categoria VARCHAR(50),
+PRIMARY KEY (tipoDoc,nroDocumento),
+FOREIGN KEY (tipoDoc,nroDocumento) REFERENCES TpG_Persona (tipoDoc,nroDocumento)
+ON DELETE CASCADE ON UPDATE CASCADE
+);
+
+
+CREATE TABLE TpG_Ciudad(
+codigo INT,
+nombre VARCHAR(50),
+PRIMARY KEY (codigo)
+);
+
+CREATE TABLE TpG_Colectivo(
+patente VARCHAR(50),
+marca VARCHAR(50),
+cantidadAsientos INT,
+color VARCHAR(50),
+tipoDocChofer VARCHAR(50),
+nroDocumentoChofer INT,
+PRIMARY KEY (patente),
+FOREIGN KEY (tipoDocChofer,nroDocumentoChofer) REFERENCES TpG_Chofer (tipoDoc,nroDocumento)
+ON DELETE CASCADE ON UPDATE CASCADE
+
+);
+
+CREATE TABLE TpG_Asiento(
+patenteColectivo VARCHAR(50),
+nroAsiento INT,
+lado VARCHAR(50),
+PRIMARY KEY (nroAsiento),
+FOREIGN KEY (patenteColectivo) REFERENCES TpG_Colectivo (patente)
+ON DELETE CASCADE ON UPDATE CASCADE
+);
+
+
+CREATE TABLE TpG_Viaje (
+    IdViaje INT  PRIMARY KEY,
+    Fecha DATE,
+    HoraPartida TIME,
+    IdColectivo VARCHAR(50),
+    CodCiudadOrigen INT,
+    CodCiudadDestino INT,
+    FOREIGN KEY (IdColectivo) REFERENCES TpG_Colectivo(patente)
+    ON UPDATE CASCADE  ON DELETE CASCADE,
+    FOREIGN KEY (CodCiudadOrigen) REFERENCES TpG_Ciudad (codigo)
+    ON UPDATE CASCADE  ON DELETE CASCADE,
+    FOREIGN KEY (CodCiudadDestino) REFERENCES TpG_Ciudad(codigo)
+    ON UPDATE CASCADE  ON DELETE CASCADE
+);
+
+
+CREATE TABLE TpG_Pasaje (
+    numeroPasaje INT AUTO_INCREMENT,
+    tipoDocPasajero VARCHAR(50),
+    nroDocumentoPasajero INT,
+    nroAsiento INT,
+    patenteColectivo VARCHAR(50),
+    idViaje INT,
+    fechaEmision DATE,
+    PRIMARY KEY (numeroPasaje),
+    FOREIGN KEY (tipoDocPasajero, nroDocumentoPasajero) REFERENCES TpG_Pasajero(tipoDoc, nroDocumento)
+    ON DELETE CASCADE ON UPDATE CASCADE,
+    FOREIGN KEY (nroAsiento,patenteColectivo) REFERENCES TpG_Asiento(nroAsiento,patenteColectivo)
+    ON DELETE CASCADE ON UPDATE CASCADE,
+    FOREIGN KEY (idViaje) REFERENCES TpG_Viaje(IdViaje)
+    ON DELETE CASCADE ON UPDATE CASCADE
+);
+
+
+
+

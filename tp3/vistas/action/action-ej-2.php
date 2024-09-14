@@ -53,9 +53,11 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <title>Contenido del Archivo</title>
+    <link rel="stylesheet" href="../assets/css/stylesIndex.css">
 </head>
 <body>
-    <div class="container mt-5">
+    <?php include_once("../estructura/NavbarAction.php"); ?>
+    <div class="container mt-5 mb-5 pb-xl-5">
         <h1 class="mb-4">Resultado</h1>
         <p><?php echo $mensaje ?></p>
         <h2 class="mb-4">Contenido del Archivo:</h2>
@@ -65,5 +67,6 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     </div>
     
     
+    <?php include_once("../estructura/Footer.php"); ?>
 </body>
 </html>

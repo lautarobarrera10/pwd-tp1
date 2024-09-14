@@ -9,7 +9,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 </head>
 <body>
-    <?php include_once("../estructura/Navbar.php"); ?>
+    <?php include_once("./estructura/Navbar.php"); ?>
     <div class="container mt-4 p-xxl-5">
         <h1 class="mb-4">Ejercicio 1</h1>
         <h2 class="mb-3">Consigna</h2>
@@ -27,6 +27,6 @@
             <button type="submit" class="btn btn-primary">Enviar</button>
         </form>
     </div>
-    <?php include_once("../estructura/Footer.php"); ?>
+    <?php include_once("./estructura/Footer.php"); ?>
 </body>
 </html>

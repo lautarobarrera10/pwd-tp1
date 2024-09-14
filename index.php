@@ -36,7 +36,7 @@
                     <div class="card-body">
                       <h5 class="card-title">TP N°2</h5>
                       <p class="card-text">Utilizando bootstrap y realizando validaciones js</p>
-                      <a href="./tp2" class="btn btn-primary">Ir al menu</a>
+                      <a href="./tp2/vistas/index.php" class="btn btn-primary">Ir al menu</a>
                     </div>
                   </div>
             </div>
@@ -46,7 +46,7 @@
                     <div class="card-body">
                       <h5 class="card-title">TP N°3</h5>
                       <p class="card-text">Subir archivos al servidor</p>
-                      <a href="./tp3" class="btn btn-primary">Ir al menu</a>
+                      <a href="./tp3/vistas/index.php" class="btn btn-primary">Ir al menu</a>
                     </div>
                   </div>
             </div>

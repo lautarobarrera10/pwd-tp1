@@ -17,35 +17,18 @@ $estudiante = $entrada->getEstudiante() ? "Sí" : "No";
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ejercicio 8</title>
-    <link rel="stylesheet" href="../assets/css/style.css">
+    <title>Programación Web Dinámica - Calcular valor de entrada</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="../assets/css/stylesIndex.css">
 </head>
 <body>
-    <h1>Ejercicio 8</h1>
-    <h2>Consigna</h2>
-    <p>La empresa de Cine Cinem@s tiene establecidas diferentes tarifas para las entradas, en
-    función de la edad y de la condición de estudiante del cliente. Desea que sean los propios
-    clientes los que puedan calcular el valor de sus entradas a través de una página web. Si
-    es estudiante o menor de 12 años el precio es de $160, si es estudiante y mayor o igual
-    de 12 años el precio es de $180, en cualquier otro caso el precio es de $300. Diseñar un
-    formulario que solicite la edad y permita ingresar si se trata de un estudiante o no. Con
-    un botón enviar los datos a un script encargado de realizar el cálculo y visualizarlo.
-    Agregar un botón para limpiar el formulario y volver a consultar.
-    </p>
-    <h2>Solución</h2>
-    <form>
-        <h3>Cine Cinem@s - Calcular valor de entrada</h3>
-
-        <label for="edad">Edad</label>
-        <input disabled value="<?php echo $edad; ?>">
-
-        <label for="estudiante">¿Es estudiante?</label>
-        <input disabled value="<?php echo $estudiante; ?>">
-
-        <p class="precio">$<?php echo $precio; ?></p>
-
-        <button type="button">Calcular</button>
-        <a href="../ej8.php" class="boton-alternativo">Limpiar datos</a>
-    </form>
+    <?php include_once("../estructura/NavbarAction.php"); ?>
+    <div class="container mt-4 p-xxl-5">
+        <h1 class="mb-3">resultado</h1>
+        <p class="precio">Precio: $<?php echo htmlspecialchars($precio); ?></p>
+        <a href="../ej8.php" class="btn btn-primary">Volver atrás</a>
+    </div>
+    <?php include_once("../estructura/Footer.php"); ?>
 </body>
 </html>

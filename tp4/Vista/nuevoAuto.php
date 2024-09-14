@@ -4,18 +4,18 @@
 <head>
     <meta charset="UTF-8">
     <title>Nuevo Auto</title>
-    <link rel="stylesheet" href="./css/bootstrap.min.css">
-    <link rel="stylesheet" href="./css/styles.css">
-    <link rel="stylesheet" href="./css/inicio.css">
-    <link rel="stylesheet" href="./css/validacion.css">
+    <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./assets/css/styles.css">
+    <link rel="stylesheet" href="./assets/css/inicio.css">
+    <link rel="stylesheet" href="./assets/css/validacion.css">
     <script src="js/jquery.js"></script>
 </head>
 
 <body class="bg-dark">
     <?php
-    $rutalogo = "./img/";
-    include_once("../estructura/menu/menu.php");
-    include_once("../estructura/Navbar.php");
+    $rutalogo = "./assets/img/";
+    include_once("./estructura/menu/menu.php");
+    include_once("./estructura/Navbar.php");
     ?>
 
     <main class="container-fluid cont container text-light">
@@ -46,7 +46,7 @@
                 </div>
     </main>
 
-    <?php include_once("../estructura/Footer.php"); ?>
+    <?php include_once("./estructura/Footer.php"); ?>
     
     <script src="./js/bootstrap.bundle.min.js"></script>
     <script>

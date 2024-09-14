@@ -4,18 +4,18 @@
 <head>
     <meta charset="UTF-8">
     <title>Buscar Persona</title>
-    <link rel="stylesheet" href="./css/bootstrap.min.css">
-    <link rel="stylesheet" href="./css/styles.css">
-    <link rel="stylesheet" href="./css/inicio.css">
-    <script type="text/javascript" src="./js/bootstrap.bundle.min.js"></script>
-    <script src="js/jquery.js"></script>
+    <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./assets/css/styles.css">
+    <link rel="stylesheet" href="./assets/css/inicio.css">
+    <script type="text/javascript" src="./assets/js/bootstrap.bundle.min.js"></script>
+    <script src="./assets/js/jquery.js"></script>
 </head>
 
 <body class="bg-dark">
     <?php
-    $rutalogo = "./img/";
-    include_once("../estructura/menu/menu.php");
-    include_once("../estructura/Navbar.php");
+    $rutalogo = "./assets/img/";
+    include_once("./estructura/menu/menu.php");
+    include_once("./estructura/Navbar.php");
     ?>
 
     <main class=" cont container text-light">
@@ -44,7 +44,7 @@
     </main>
     <div >
     </div>
-    <?php include_once("../estructura/Footer.php"); ?>
+    <?php include_once("./estructura/Footer.php"); ?>
 
     <script>
         $(document).ready(function() {

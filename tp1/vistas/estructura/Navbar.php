@@ -1,7 +1,7 @@
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark p-3">
-    <a class="navbar-brand" href="./" style="display:flex; flex-direction:row;">
-        <img src="../../vistas/assets/img/SuperAsombrososLogo.jpg" width="80" height="80" alt="logo grupo 8">
-        <h5 class="text-center p-4 ">Trabajo Práctico N°4</h5>
+    <a class="navbar-brand" href="../../index.php" style="display:flex; flex-direction:row;">
+        <img src="./assets/img/SuperAsombrososLogo.jpg" width="80" height="80" alt="logo grupo 8">
+        <h5 class="text-center p-4 ">Trabajo Práctico N°1</h5>
     </a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navegacion" aria-controls="navegacion" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>

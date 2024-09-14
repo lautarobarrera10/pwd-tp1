@@ -21,13 +21,13 @@ $mensaje = $obj->devolverSigno($datos);
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 </head>
 <body>
-    <?php include_once("../../estructura/Navbar.php"); ?>
+    <?php include_once("../estructura/NavbarAction.php"); ?>
     <div class="container mt-4 p-xxl-5">
         <h1 class="mb-3">Número ingresado</h1>
         <p><?php echo "El número ingresado es " . $mensaje; ?></p>
         <a href="../ej1.php">Volver atras</a>
     </div>
     
-    <?php include_once("../../estructura/Footer.php"); ?>
+    <?php include_once("../estructura/Footer.php"); ?>
 </body>
 </html>

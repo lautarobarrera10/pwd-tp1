@@ -11,19 +11,19 @@ require("../Modelo/Persona.php");
 
 <head>
     <title>Autos de Persona</title>
-    <link rel="stylesheet" href="./css/bootstrap.min.css">
-    <link rel="stylesheet" href="./css/styles.css">
-    <link rel="stylesheet" href="./css/inicio.css">
+    <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./assets/css/styles.css">
+    <link rel="stylesheet" href="./assets/css/inicio.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css">
-    <script src="js/jquery.js"></script>
-    <script type="text/javascript" src="./js/bootstrap.bundle.min.js"></script>
+    <script src="./assets/js/jquery.js"></script>
+    <script type="text/javascript" src="./assets/js/bootstrap.bundle.min.js"></script>
 </head>
 
 <body class="bg-dark">
     <?php
-    include_once("../estructura/menu/menu.php");
-    $rutalogo = "./img/";
-    include_once("../estructura/Navbar.php");
+    include_once("./estructura/menu/menu.php");
+    $rutalogo = "./assets/img/";
+    include_once("./estructura/Navbar.php");
     ?>
 
     <main class="container-fluid cont container text-light">
@@ -128,7 +128,7 @@ require("../Modelo/Persona.php");
     </main>
     <div >
     </div>
-    <?php include_once("../estructura/Footer.php"); ?>
+    <?php include_once("./estructura/Footer.php"); ?>
 </body>
 
 </html>

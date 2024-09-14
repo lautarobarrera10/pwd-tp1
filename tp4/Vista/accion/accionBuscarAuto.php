@@ -8,22 +8,22 @@
  require_once("../../Modelo/Auto.php");
  require_once("../../Modelo/Persona.php");
  require_once("../../../configuracion.php");
- include_once("../../estructura/menu/menu_accion.php");
+ include_once("../estructura/menu/menu_accion.php");
 ?>
 <head>
     <title>Resultado de la Búsqueda</title>
-    <link rel="stylesheet" href="../css/bootstrap.min.css">
-    <link rel="stylesheet" href="../css/styles.css">
-    <script type="text/javascript" src="../js/bootstrap.bundle.min.js"></script>
-    <link rel="stylesheet" href="../css/inicio.css">
+    <link rel="stylesheet" href="../assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../assets/css/styles.css">
+    <script type="text/javascript" src="../assets/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="../assets/css/inicio.css">
 
 </head>
 
 <body class="bg-dark">
     <?php
-    $rutalogo = "../img/";
-    include_once("../../estructura/Navbar.php");
-    include_once("../../estructura/menu/menu_accion.php");
+    $rutalogo = "../assets/img/";
+    include_once("../estructura/Navbar.php");
+    include_once("../estructura/menu/menu_accion.php");
     ?>
 
     <main class="container-fluid cont container text-light">
@@ -78,7 +78,7 @@
 <div class="contenedor">
 </div>
 <?php
-    include_once("../../estructura/Footer.php");
+    include_once("../estructura/Footer.php");
     ?>
 
 
