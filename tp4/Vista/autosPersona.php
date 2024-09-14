@@ -2,6 +2,11 @@
 <html>
 <?php
 require("../../configuracion.php");
+require("../Control/AbmAuto.php");
+require("../Control/AbmPersona.php");
+require("../Modelo/conector/BaseDatos.php");
+require("../Modelo/Auto.php");
+require("../Modelo/Persona.php");
 ?>
 
 <head>
