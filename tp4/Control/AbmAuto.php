@@ -1,6 +1,9 @@
 <?php
 
-
+namespace Control;
+use Modelo\Auto;
+use Modelo\Persona;
+use PDOException;
 
 class AbmAuto
 {

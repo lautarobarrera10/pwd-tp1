@@ -1,3 +1,13 @@
+<?php
+
+require_once("../../configuracion.php");
+include_once("../estructura/menu/menu.php");
+
+use Control\AbmAuto;
+use Control\AbmPersona;
+
+?>
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -13,9 +23,7 @@
 <?php
 
 
-    require_once("../../configuracion.php");
     $rutalogo = "./img/";
-    include_once("../estructura/menu/menu.php");
     include_once("../estructura/Navbar.php");
 ?>
 
@@ -23,13 +31,6 @@
     <h1>Lista de Autos</h1>
 
     <?php
-    // Incluye las clases de la capa de control
-    include "../Modelo/conector/BaseDatos.php";
-    include "../Modelo/Auto.php";
-    include "../Modelo/Persona.php";
-    include "../Control/AbmAuto.php";
-    include "../Control/AbmPersona.php";
-
     // Crea instancias de las clases de la capa de control
     $abmAuto = new AbmAuto();
     $abmPersona = new AbmPersona();

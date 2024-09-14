@@ -1,3 +1,14 @@
+<?php
+
+require_once("../../utils/functions.php");
+require_once("../../../configuracion.php");
+include_once("../../estructura/menu/menu_accion.php");
+
+use Control\AbmAuto;
+use Control\AbmPersona;
+
+?>
+
 <!DOCTYPE html>
 <html>
 
@@ -12,17 +23,7 @@
 
 <body class="bg-dark">
     <?php
-    
-     
-    require_once("../../../configuracion.php");
-    require_once("../../utils/functions.php");
-    require_once("../../Control/AbmAuto.php");
-    require_once("../../Control/AbmPersona.php");
-    require_once("../../Modelo/conector/BaseDatos.php");
-    require_once("../../Modelo/Auto.php");
-    require_once("../../Modelo/Persona.php");
     $rutalogo = "../img/";
-    include_once("../../estructura/menu/menu_accion.php");
     include_once("../../estructura/Navbar.php");
     ?>
 

@@ -1,6 +1,7 @@
 <?php
 
-
+namespace Modelo;
+use Modelo\conector\BaseDatos;
 
 class Persona
 {

@@ -1,15 +1,15 @@
+<?php
+
+require_once("../../utils/functions.php");
+require_once("../../../configuracion.php");
+include_once("../../estructura/menu/menu_accion.php");
+
+use Control\AbmAuto;
+use Control\AbmPersona;
+
+?>
 <!DOCTYPE html>
 <html>
-<?php
- require_once("../../utils/functions.php");
- require_once("../../Control/AbmAuto.php");
- require_once("../../Control/AbmPersona.php");
- require_once("../../Modelo/conector/BaseDatos.php");
- require_once("../../Modelo/Auto.php");
- require_once("../../Modelo/Persona.php");
- require_once("../../../configuracion.php");
- include_once("../../estructura/menu/menu_accion.php");
-?>
 <head>
     <title>Resultado de la Búsqueda</title>
     <link rel="stylesheet" href="../css/bootstrap.min.css">
@@ -23,7 +23,6 @@
     <?php
     $rutalogo = "../img/";
     include_once("../../estructura/Navbar.php");
-    include_once("../../estructura/menu/menu_accion.php");
     ?>
 
     <main class="container-fluid cont container text-light">
